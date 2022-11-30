@@ -1,10 +1,17 @@
 import React from 'react'
-import 'assets/scss/style.scss'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import LandingPage from "./pages/LandingPage";
+import './assets/sass/style.scss';
 
-const App = () => {
+function App() {
   return (
-    <div>Hello World</div>
+   <div className='App'>
+      <Router>
+        <Route exact path='/'><LandingPage/></Route>
+      </Router>
+    </div>
   )
+  
 }
 
 export default App
