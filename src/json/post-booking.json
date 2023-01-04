@@ -1,0 +1,13 @@
+{
+  "duration": "2",
+  "price": "240",
+  "bookingDateStart": "new Date()",
+  "bookingDateEnd": "new Date()",
+  "firstName": "Ajie",
+  "lastName": "Prima",
+  "emailAddress": "ajiee.salahudin@gmail.com.com",
+  "phoneNumber": "081923012380",
+  "accountHolder": "Prima Ajie",
+  "bankFrom": "BCA",
+  "proofPayment": "FileData()"
+}

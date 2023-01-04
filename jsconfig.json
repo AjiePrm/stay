@@ -1,10 +1,10 @@
 {
     "compilerOptions": {
-        "baseUrl": "src"
-   },
-    "include": ["src/**/*", "webpack.config.dev.js", "src/assets/bootstrap"]
-    
+      "module": "commonjs",
+      "target": "es6",
+      "baseUrl": "src"
+    },
+    "include": ["src/**/*", "webpack.config.dev.js", "src/assets/bootstrap"],
+    "exclude": ["node_modules"]
 }
-
-
 

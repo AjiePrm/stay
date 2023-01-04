@@ -94,6 +94,7 @@ section {
 }
 
 .img-cover {
+  z-index: 1;
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -114,7 +115,7 @@ section {
   .tag {
     z-index: 3;
     font-size: 0.875rem;
-    background-color: $pink;
+    background-color: $cyan;
     padding: 0.25rem 1.25rem;
     position: absolute;
     top: 0;
@@ -164,7 +165,6 @@ section {
     }
 
     .img-wrapper {
-      z-index: 1;
       margin: 0;
       position: absolute;
       top: 0;

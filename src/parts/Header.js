@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from 'Elements/Button'
 import BrandIcon from 'parts/IconText'
+import UserLogin from 'assets/image/icon/iconUser.svg'
+import Notification from 'assets/image/icon/iconNotif.svg'
 import {useLocation} from 'react-router-dom'
 
 export default function Header(props) {
@@ -10,7 +12,7 @@ export default function Header(props) {
   };
   return (
    
-      <header className="spacing-sm">
+      <header className="spacing-sm mt-3">
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light">
             <BrandIcon />
@@ -34,6 +36,16 @@ export default function Header(props) {
                 <li className='nav-item'>
                   <Button className="nav-link" type="link" href="/agents">
                     Agents
+                  </Button>
+                </li>
+                <li className='nav-item' style={{marginTop:-6, marginLeft:20, marginRight:-15}}>
+                  <Button className='nav-link' type='link' href='/notification'>
+                    <img width='43px' height='41px' he src={Notification} alt='notif'/>
+                  </Button>
+                </li>
+                <li className='nav-item'>
+                  <Button className='nav-link' type='link' href='/login'>
+                    <img width='34px' height='32px' src={UserLogin} alt='login or register'/>
                   </Button>
                 </li>
               </ul>
