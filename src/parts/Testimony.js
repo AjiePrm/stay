@@ -1,9 +1,11 @@
 import React from 'react'
 import Star from 'Elements/Star'
 import Button from 'Elements/Button'
+import Slie from 'react-reveal/Slide'
 
 export default function Testimony({data}) {
   return (
+    <Slie bottom>
     <section className="container">
         <div className="row align-items-center">
             <div className="col-auto" style={{ marginRight: 60 }}>
@@ -45,5 +47,6 @@ export default function Testimony({data}) {
           </div>
         </div>
       </section>
+      </Slie>
   )
 }

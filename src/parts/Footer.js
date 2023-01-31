@@ -2,6 +2,7 @@ import React from 'react'
 import Button from 'Elements/Button'
 import IconText from 'parts/IconText'
 
+
 export default function Footer() {
   return (
     <footer>
@@ -40,7 +41,7 @@ export default function Footer() {
                         </ul>
                 </div>
                 <div className='col-3'>
-                    <h6 className='mt-2'>Connetc Me</h6>
+                    <h6 className='mt-2'>Connect Me</h6>
                         <ul className='list-group list-group-flush'>
                             <li className='list-group-item'>
                                 <Button isExternal type='link' href='mailto:ajiee.salahudin@gmail.com'>ajiee.salahudin@gmail.com</Button>
@@ -61,5 +62,6 @@ export default function Footer() {
             </div>
         </div>
     </footer>
+
   )
 }

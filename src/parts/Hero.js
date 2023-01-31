@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Fade from 'react-reveal/Slide'
 import ImgHero from 'assets/image/img-hero.jpg'
 import ImgHeroFrame from 'assets/image/img-hero-frame.png'
 import IconCitis from 'assets/image/icon/icon-citis.svg'
@@ -14,10 +14,11 @@ export default function Hero(props) {
   function showMostPicked(){
     window.scrollTo({
       top: props.refMostPicked.current.offsetTop -30,
-      behavior: 'smooth'
+      behavior: 'smooth',
     })
   }
   return (
+    <Fade>
     <section className='container pt-4'>
       <div className='row aligh-items-center'>
         <div className='col-auto pr-5' style={{width: 559, marginTop:-30}}>
@@ -28,8 +29,8 @@ export default function Hero(props) {
             We provide what you need to enjoy your holiday with family. 
             Time to make another memorable moments
           </p>
-          <Button className='btn px-5' hasShadow isPrimary onClick={showMostPicked}>
-            <span className='font-weight-normal text-white'>Show Me Now </span>
+          <Button className='btn px-5 text-white' hasShadow isPrimary onClick={showMostPicked}>
+            Show Me Now 
           </Button>
           
           <div className='row' style={{marginTop: 60}}>
@@ -37,7 +38,7 @@ export default function Hero(props) {
               <img width='36' height='36' src={IconTraveler} alt={`${props.data.travelers} Travelers`} />
               <h6 className='mt-3'>
                 {formatNumber(props.data.travelers)}{' '}
-                <span className='text-gray-500' font-weight-light>
+                <span className='text-gray-500 font-weight-light' >
                   travelers
                 </span>
               </h6>
@@ -46,7 +47,7 @@ export default function Hero(props) {
               <img width='36' height='36' src={IconCitis} alt={`${props.data.cities} Cities`} />
               <h6 className='mt-3'>
                 {formatNumber(props.data.cities)}{' '}
-                <span className='text-gray-500' font-weight-light>
+                <span className='text-gray-500 font-weight-light' >
                   cities
                 </span>
               </h6>
@@ -55,7 +56,7 @@ export default function Hero(props) {
               <img width='32' height='31' src={IconTreasuer} alt={`${props.data.treasures} Treasure`} />
               <h6 className='mt-3'>
                 {formatNumber(props.data.treasures)}{' '}
-                <span className='text-gray-500' font-weight-light>
+                <span className='text-gray-500 font-weight-light' >
                   treasure
                 </span>
               </h6>
@@ -77,5 +78,6 @@ export default function Hero(props) {
         </div>
       </div>
     </section>
+    </Fade>
   )
 }

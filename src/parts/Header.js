@@ -4,6 +4,7 @@ import BrandIcon from 'parts/IconText'
 import UserLogin from 'assets/image/icon/iconUser.svg'
 import Notification from 'assets/image/icon/iconNotif.svg'
 import {useLocation} from 'react-router-dom'
+import Fade from 'react-reveal/Fade'
 
 export default function Header(props) {
   const GetNavLinkClass = (path) => {
@@ -11,7 +12,7 @@ export default function Header(props) {
     return location.pathname ? " active" : "";
   };
   return (
-   
+   <Fade>
       <header className="spacing-sm mt-3">
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light">
@@ -40,7 +41,7 @@ export default function Header(props) {
                 </li>
                 <li className='nav-item' style={{marginTop:-6, marginLeft:20, marginRight:-15}}>
                   <Button className='nav-link' type='link' href='/notification'>
-                    <img width='43px' height='41px' he src={Notification} alt='notif'/>
+                    <img width='43px' height='41px' src={Notification} alt='notif'/>
                   </Button>
                 </li>
                 <li className='nav-item'>
@@ -53,6 +54,6 @@ export default function Header(props) {
           </nav>
         </div>
       </header>
-   
+    </Fade>
   );
 }
