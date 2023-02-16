@@ -1,7 +1,7 @@
 import React from "react";
 
 import propTypes from "prop-types";
-import Button from "elements/Button";
+import Button from "Elements/Button";
 
 import "./index.scss";
 

@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "bootstrap": "^5.0.2",
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "node-sass": "^7.0.3",
     "react-router": "^5.3.4",
     "react-router-dom": "^5.3.4",

@@ -1,6 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import Breadcrumb from "Elements/Breadcrumb";
+import Breadcrumb from 'Elements/Breadcrumb'
 
 export default function PageDetailTitle({ data, breadcrumb }) {
   return (
